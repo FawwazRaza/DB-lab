@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converting Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Currency Converting Website</h1>
+    <div class="container">
+        <div class="box">
+            <label for="currency-medium">Select currency medium</label>
+            <select id="currency-medium">
+                <option value="" disabled selected>Select currency medium</option>
+            </select>
+            <br><br><br><br><br>
+            <label for="amount-rupees">Please enter amount in rupees to convert to your selected medium</label>
+            <input type="design" id="amount-rupees"><br>
+            <button onclick="convertToRsinSelectedMedium()">Convert Rupees to Selected Medium</button>
+            <br><br><br>
+            <input type="design" id="converted-amount" disabled>
+       <br><br>
+            <label for="amount-selected-medium">Please enter amount in your chosen medium to convert to rupees</label>
+            <input type="design" id="amount-selected-medium">
+            <br><br><br>
+            <button onclick="ConvertRs()">Convert Selected Medium to Rupees</button>
+            <br><br><br>
+            <input type="design" id="converted-rupees" disabled>
+            <br><br>
+            <input type="design" id="previous-medium" disabled>
+            <br>
+            <label for="programmed-by">Programmed by</label>
+            <input type="design" id="programmed-by">
+            <button onclick="ResetFoo()" id="reset-btn">Reset</button>
+        </div>
+    </div>
+</body>
+</html>
